@@ -6,7 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 console.log("app.ts here! HELLO 👋");
 const express_1 = __importDefault(require("express"));
 const http_errors_1 = __importDefault(require("http-errors"));
-const PORT = 3001;
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)(); // this runs dotenv
+const PORT = Number(process.env.PORT);
 const app = (0, express_1.default)();
 app.get('/', (req, res, next) => {
     res.send(`hello 🌏, rootRoute here! 👋"`);

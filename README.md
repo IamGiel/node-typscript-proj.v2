@@ -70,3 +70,4 @@ const server:Server = app.listen(PORT, ()=> {
 ## TO RUN 
 
 - dev `npm run dev`
+- to build `npx tsc` or `tsc` (if globally installed typescript)
