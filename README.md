@@ -44,3 +44,7 @@ set up App.ts
         console.log(`server is 🏃🏃🏃💨 running on port: ${PORT}`)
     })
 ```
+
+## TO RUN 
+
+- dev `npm run dev`
