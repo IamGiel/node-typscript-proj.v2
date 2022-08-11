@@ -11,6 +11,7 @@ var PORT = Number(process.env.PORT);
 var app = express();
 app.get('/', function (req, res, next) {
     // res.send(`hello 🌏, rootRoute here! 👋"`)
+    console.log("this is server running root route");
     res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 });
 app.use(express.static(path.resolve(__dirname, "./client/build")));

@@ -18,6 +18,7 @@ const app:Application = express()
 
 app.get('/', (req:Request,res:Response,next:NextFunction)=> {
     // res.send(`hello 🌏, rootRoute here! 👋"`)
+    console.log("this is server running root route")
     res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 
 })
