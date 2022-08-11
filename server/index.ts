@@ -1,10 +1,13 @@
 
 console.log("app.ts here! HELLO 👋")
 
-import express, {Request, Response, NextFunction, Application, ErrorRequestHandler} from "express";
+import {Request, Response, NextFunction, Application, ErrorRequestHandler} from "express";
 import {Server} from "http";
-import createHttpError from "http-errors";
+// import createHttpError from "http-errors";
 import {config} from "dotenv";
+const express = require("express")
+const createHttpError = require("http-errors")
+
 
 config() // this runs dotenv
 
