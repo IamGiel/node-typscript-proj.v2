@@ -5,10 +5,11 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "ts-node server/index.ts",
+    "server": "ts-node index.ts",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "concurrently \"npm run build --prefix client\" \"tsc server/index.ts\" \"node server/index.js\""
+    "begin":"node index.js",
+    "start": "npm run build --prefix client && tsc index.ts  && npm run begin"
   },
   "repository": {
     "type": "git",
