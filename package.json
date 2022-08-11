@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "ts-node server/index.ts",
     "client": "npm start --prefix client",
-    "build":"tsc server/index.ts",
+    "clientBuild": "npm run build --prefix client",
+    "build":"concurrently \"tsc server/index.ts\" \"npm run clientBuild\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "concurrently \"node server/index.js\" \"npm run client\""
+    "start": "concurrently \"npm run build\" \"node server/index.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",
