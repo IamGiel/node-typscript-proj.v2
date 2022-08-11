@@ -7,6 +7,8 @@ import {Server} from "http";
 import {config} from "dotenv";
 const express = require("express")
 const createHttpError = require("http-errors")
+const path = require("path");
+
 
 
 config() // this runs dotenv
@@ -15,8 +17,12 @@ const PORT:number = Number(process.env.PORT);
 const app:Application = express()
 
 app.get('/', (req:Request,res:Response,next:NextFunction)=> {
-    res.send(`hello 🌏, rootRoute here! 👋"`)
+    // res.send(`hello 🌏, rootRoute here! 👋"`)
+    res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
+
 })
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // error handler 
 app.use((req:Request,res:Response,next:NextFunction)=> {

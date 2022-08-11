@@ -5,12 +5,15 @@ console.log("app.ts here! HELLO 👋");
 var dotenv_1 = require("dotenv");
 var express = require("express");
 var createHttpError = require("http-errors");
+var path = require("path");
 (0, dotenv_1.config)(); // this runs dotenv
 var PORT = Number(process.env.PORT);
 var app = express();
 app.get('/', function (req, res, next) {
-    res.send("hello \uD83C\uDF0F, rootRoute here! \uD83D\uDC4B\"");
+    // res.send(`hello 🌏, rootRoute here! 👋"`)
+    res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 });
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 // error handler 
 app.use(function (req, res, next) {
     next(new createHttpError.NotFound());
