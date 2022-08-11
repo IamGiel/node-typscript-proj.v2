@@ -8,7 +8,7 @@
     "server": "ts-node server/index.ts",
     "client": "npm start --prefix client",
     "clientBuild": "npm run build --prefix client",
-    "build":"concurrently \"tsc server/index.ts\" \"npm run clientBuild\"",
+    "build":"concurrently \"tsc server/index.ts\" \"npm run clientBuild\" \"npm run client\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "concurrently \"npm run build\" \"node server/index.js\" \"npm run client\""
   },
