@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.ts & cd client-react && npm install &&  npm run dev",
-    "build": "tsc -p . & cd client-react && npm run build",
-    "postinstall": "npm run build"
+    "start":"tsc -p . && node dist/index.js",
+    "build": "npm install && npm run start"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,7 @@
     "url": "https://github.com/IamGiel/node-typscript-proj.v2/issues"
   },
   "homepage": "https://github.com/IamGiel/node-typscript-proj.v2#readme",
+  "type": "module",
   "dependencies": {
     "express": "^4.18.1",
     "path": "^0.12.7"
