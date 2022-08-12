@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js ",
-    "dev": "nodemon server/index.ts & cd client-react &&  npm run dev",
-    "build": "tsc -p . & cd client-react && npm run build",
-    "tsc": "tsc",
-    "postinstall": "npm run tsc"
+    "start": "nodemon server/index.ts & cd client-react && npm install &&  npm run dev",
+    "build": "tsc -p . & cd client-react && npm run build"
   },
   "repository": {
     "type": "git",
