@@ -3,7 +3,7 @@ import path from 'path';
 const __dirname = path.resolve();
 const app:Application = express();
 
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 app.get("/", (req:Request, res:Response, next:NextFunction)=> {
     res.send("👋 hello 🌏 ")
     
