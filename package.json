@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.ts & cd client-react && npm install &&  npm run dev",
-    "build": "tsc -p . & cd client-react && npm run build"
+    "build": "tsc -p . & cd client-react && npm run build",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
