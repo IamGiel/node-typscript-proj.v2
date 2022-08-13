@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "npm run build",
+    "start": "npm install && npm run build",
     "build": "tsc && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
