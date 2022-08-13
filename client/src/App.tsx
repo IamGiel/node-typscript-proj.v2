@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
   useState(() => {
-    console.log("use state called ");
+    console.log("use state called ", Root());
     axios
       .get(
         `${Root()}`,
