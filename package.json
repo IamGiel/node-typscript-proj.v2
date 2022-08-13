@@ -6,9 +6,9 @@
   "proxy": "http://localhost:3001",
   "scripts": {
     "start": "rm -rf dist/index.js && tsc && node dist/index.js",
-    "server":"rm -rf dist/index.js && tsc && node dist/index.js",
+    "server": "rm -rf dist/index.js && tsc && node dist/index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"", 
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
