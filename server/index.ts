@@ -14,4 +14,4 @@ app.get("/", (req:Request, res:Response, next:NextFunction)=> {
     
 })
 
-app.listen(PORT, ()=> console.log(`server running in PORT =>  ${PORT}`))
+app.listen(PORT || 5000, ()=> console.log(`server running in PORT =>  ${PORT}`))
