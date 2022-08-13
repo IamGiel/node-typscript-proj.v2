@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+import * as React from "react";
 import "./App.css";
 import axios from "axios";
 import { Root } from "./utils/Root";
+import { useState } from "react";
 
 function App() {
   useState(() => {
@@ -21,12 +21,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
+        
        <div>
         <p>
-            Gel from tsx<code>src/App.tsx</code> and save to reload.
+            Gel from tsx 8<code>src/App.tsx</code> and save to reload.
           </p>
        </div>
       </header>
