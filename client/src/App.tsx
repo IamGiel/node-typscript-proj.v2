@@ -26,7 +26,7 @@ function App() {
         </div>
        <div>
         <p>
-            Gel is here! ! !<code>src/App.tsx</code> and save to reload.
+            Gel from tsx<code>src/App.tsx</code> and save to reload.
           </p>
        </div>
       </header>
