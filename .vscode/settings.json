@@ -1,0 +1,11 @@
+{
+    // A multiplier to be used on the `deltaX` and `deltaY` of mouse wheel scroll events.
+	"editor.mouseWheelScrollSensitivity": 0.9,
+
+	// Zoom the font of the editor when using mouse wheel and holding `Ctrl`.
+	"editor.mouseWheelZoom": true,
+
+   // Controls the delay in milliseconds after which the hover is shown.
+	"editor.hover.delay": 3000,
+
+}
