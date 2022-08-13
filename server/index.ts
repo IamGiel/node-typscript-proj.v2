@@ -22,4 +22,4 @@ app.get("/", (req:Request, res:Response, next:NextFunction)=> {
     res.send({"message":`👋 hello 🌏, I am server running from ${PORT}`})
 })
 
-app.listen(PORT || 4000, ()=> console.log(`server running in PORT:  ${PORT}`))
+app.listen(PORT || 4001, ()=> console.log(`server running in PORT:  ${PORT}`))
