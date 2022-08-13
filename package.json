@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd client && npm run build && cd .. && node dist/index.js",
-    "postinstall": "tsc",
+    "postinstall": "tsc && npm start",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master"
