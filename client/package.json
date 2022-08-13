@@ -16,10 +16,10 @@
   },
   "scripts": {
     "start": "npm install && npm run build && react-scripts start",
-    "build": "npm install && tsc && react-scripts build",
+    "build": "tsc && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npm start"
+    "postinstall": "tsc && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
